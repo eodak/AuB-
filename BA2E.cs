@@ -43,7 +43,7 @@ namespace BA2E
         public static int Score(List<string> lista)
         {
             int suma = 0;
-            for (int i = 0; i < lista[1].Length; i++)//stringovi u listi iste duljine pa bezveze uzeo prvi
+            for (int i = 0; i < lista[1].Length; i++)
             {
                 int As = 0;
                 int Cs = 0;
@@ -77,7 +77,7 @@ namespace BA2E
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < lista[0].Length; j++)
-                    matrix[i, j] = (decimal)1;//svi krenu od 1,kao da sam dodao 1
+                    matrix[i, j] = (decimal)1;
             }
             foreach (string s in lista)
             {
@@ -97,7 +97,7 @@ namespace BA2E
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < lista[0].Length; j++)
-                    matrix2[i, j] = matrix[i, j] / (lista.Count + 4);//dijelim sa +4 jos da dobijem lijepe vjerojatnosti
+                    matrix2[i, j] = matrix[i, j] / (lista.Count + 4);
             }
             return matrix2;
         }
